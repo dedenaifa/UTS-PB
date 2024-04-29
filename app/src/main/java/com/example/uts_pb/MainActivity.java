@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        recyclerView = findViewById(R.id.recycler_iew);
+        recyclerView = findViewById(R.id.recycler_view);
 
         ApiService apiService = ApiConfig.getApiService();
         Call<GithubSearchResponse> call = apiService.searchUsers("dede");
